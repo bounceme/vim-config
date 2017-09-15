@@ -5,8 +5,8 @@
 
 if ! exists('g:colors_name')
   set background=dark
+  silent! set termguicolors
   try
-    silent! set termguicolors
     colorscheme nord
   catch
     call system('curl -fLo '.expand('<sfile>:p:h').'/colors/nord.vim --create-dirs https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/colors/nord.vim')
