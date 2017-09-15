@@ -10,6 +10,7 @@ if ! exists('g:colors_name')
 	 colorscheme nord
 	 catch
 	 call system('curl -fLo '.expand('<sfile>:p:h').'/colors/nord.vim --create-dirs '.'https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/colors/nord.vim')
+	 colo nord
 	endtry
 endif
 
